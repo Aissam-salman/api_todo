@@ -14,7 +14,6 @@ import { DeleteUserDto } from './dto/deleteUser.dto.js';
 @Injectable()
 export class AuthService {
 
-
     private readonly secret = speakeasy.generateSecret({ length: 20 })
 
     constructor(

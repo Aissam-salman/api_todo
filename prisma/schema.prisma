@@ -19,7 +19,7 @@ model Todo {
   todoId Int @id @default(autoincrement())
   desc String
   completed Boolean @default(false)
-  author User? @relation(fields: [authorId], references: [userId])
+  author User? @relation(fields: [authorId], references: [userId], onDelete: Cascade, onUpdate: Cascade)
   authorId Int?
   createdAt DateTime @default(now())
   updateAt DateTime @updatedAt

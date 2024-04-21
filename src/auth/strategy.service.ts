@@ -28,7 +28,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         if (!user) {
             throw new UnauthorizedException("Unauthorize from strategy");
         }
-        // mask password
+        //TODO: mask password
         // Reflect.deleteProperty(user, "password");
         return user;
     }

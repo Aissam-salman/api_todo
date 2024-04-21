@@ -42,3 +42,17 @@ export class AuthController {
     }
 
 }
+
+/**
+ * Routes pour les utilisateurs :
+
+    POST /auth/signup: Pour permettre aux utilisateurs de s'inscrire.
+    POST /auth/signin: Pour permettre aux utilisateurs de se connecter.
+    POST /auth/delete: Pour permettre aux utilisateurs de supprimer leur compte
+    POST /auth/reset-pass: Permet aux utilisateurs de demander le reset de leur mot de passe (envoie d'un mail de confirmation avec un code et url)
+    POST /auth/reset-pass-confirm: Permet aux utilisateurs de changer leur mot de passe (envoie d'un mail de confirmation avec un code)
+
+    //TODO:
+    GET /auth/profile: Pour récupérer les informations du profil de l'utilisateur connecté.
+    POST /auth/logout: Pour permettre aux utilisateurs de se déconnecter.
+*/
